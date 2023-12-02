@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap');
 
-body {
-    padding: 0;
+* {
     margin: 0;
-    background-image: url('french-dish.jpeg');
+    padding: 0;
+}
+
+body {
+    margin: 50px;
     font-family: 'Montserrat', sans-serif;
+    background-image: url('french-dish.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
 }
 
 /* Header Section Stylings */
@@ -53,8 +58,27 @@ nav {
 }
 
 /* Main Section Styling  */
-#center-main {
+#center-main,
+#description-title,
+#description,
+#serving-hours {
     display: flex;
     justify-content: center;
-    background-color: rgba();
+    background-color: rgba(8, 8, 110, 0.5);
+    color:aliceblue;
+    font-size: 30px;
+    padding: 20px 50px;
+}
+
+#center-main {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 20px;
+}
+
+#serving-hours {
+    font-size: 20px;
 }
