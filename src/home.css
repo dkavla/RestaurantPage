@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('french-dish.jpeg');
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header Section Stylings */
+#name {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #00008B;
+    color: aliceblue;
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav {
+    background-color: #00008B;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#home, #menu, #contact {
+    padding: 20px 30px 10px 30px;
+    font-size: 25px;
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    color: aliceblue;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+#home:hover,
+#menu:hover,
+#contact:hover {
+    cursor: pointer;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid red;
+    background-color: #0c0c92;
+}
+
+/* Main Section Styling  */
+#center-main {
+    display: flex;
+    justify-content: center;
+    background-color: rgba();
+}
