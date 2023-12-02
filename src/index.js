@@ -1,4 +1,5 @@
-
+import './home.css';
+import dish from './french-dish.jpeg';
 
 // holds the main content
 const mainDiv = document.getElementById('content');
@@ -8,9 +9,11 @@ const mainDiv = document.getElementById('content');
 const header = document.createElement('header');
 const nameDiv = document.createElement('div');
 nameDiv.id = 'name';
+nameDiv.innerHTML = "La Grande Culinaire"
 
 // navbar sections
 const navBar = document.createElement('nav');
+
 const homeBtn = document.createElement('div');
 homeBtn.id = 'home';
 homeBtn.innerHTML = "Home";
@@ -35,6 +38,8 @@ contactBtn.addEventListener('click', () => {
 navBar.appendChild(homeBtn);
 navBar.appendChild(menuBtn);
 navBar.appendChild(contactBtn);
+header.appendChild(nameDiv);
+header.appendChild(navBar);
 
 /* Main Section */
 const main = document.createElement('main');
@@ -59,9 +64,7 @@ main.appendChild(servingHours);
 
 // add components content div
 // header section
-
-mainDiv.appendChild(nameDiv);
-mainDiv.appendChild(navBar);
+mainDiv.appendChild(header);
 
 
 // main section
