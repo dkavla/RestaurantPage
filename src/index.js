@@ -9,6 +9,7 @@ import { loadMenu } from './menu';
 const mainDiv = document.getElementById('content');
 mainDiv.textContent = "";
 
+
 loadHome();
 
 // Menu Option Listeners
@@ -16,18 +17,10 @@ const home = document.getElementById('home');
 const menu = document.getElementById('menu');
 const contact = document.getElementById('contact');
 
-home.addEventListener('click', () => {
-    loadHome();
-    console.log('Home');
-});
 
-menu.addEventListener('click', () => {
-    mainDiv.textContent = '';
-    createHeader();
-    setMenu(mainDiv);
-    console.log("Menu");
-});
-
+home.addEventListener('click', loadHome);
+menu.addEventListener('click', loadMenu);
 contact.addEventListener('click', () => {
     console.log('Contact');
-});
+})
+
