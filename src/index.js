@@ -1,24 +1,33 @@
+import './index.css';
 import './home.css';
+import './menu.css';
 import dish from './french-dish.jpeg';
-import { setHome } from './home';
-import { setMenu } from './menu';
+import { loadHome } from './home';
+import { loadMenu } from './menu';
 
-setHome();
+// holds the main content
+const mainDiv = document.getElementById('content');
+mainDiv.textContent = "";
 
-// const home = document.getElementById('home');
-// const menu = document.getElementById('menu');
-// const contact = document.getElementById('contact');
+loadHome();
 
-// home.addEventListener('click', () => {
-//     setHome();
-//     console.log('Home');
-// });
+// Menu Option Listeners
+const home = document.getElementById('home');
+const menu = document.getElementById('menu');
+const contact = document.getElementById('contact');
 
-// menu.addEventListener('click', () => {
-//     setMenu();
-//     console.log("Menu");
-// });
+home.addEventListener('click', () => {
+    loadHome();
+    console.log('Home');
+});
 
-// contact.addEventListener('click', () => {
-//     console.log('Contact');
-// });
+menu.addEventListener('click', () => {
+    mainDiv.textContent = '';
+    createHeader();
+    setMenu(mainDiv);
+    console.log("Menu");
+});
+
+contact.addEventListener('click', () => {
+    console.log('Contact');
+});

@@ -1,18 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 50px;
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('french-dish.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-}
 
 /* Header Section Stylings */
 #name {
